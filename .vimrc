@@ -78,4 +78,5 @@ augroup END
 let g:ctrlp_map = '<c-p>' 
 let g:ctrlp_cmd = 'CtrlP'
 
+map <c-t> :NERDTreeToggle<CR>
 nnoremap <leader>. :CtrlPTag<cr>
