@@ -13,6 +13,14 @@ set showmatch
 "Change the leader key
 let mapleader = ","
 
+""Control P
+let g:ctrlp_map = '<c-p>' 
+let g:ctrlp_cmd = 'CtrlP'
+
+map <c-t> :NERDTreeToggle<CR>
+nmap <F8> :TagbarToggle<CR>
+nnoremap <leader>. :CtrlPTag<cr>
+
 "folding settings 
 set foldenable "fold by default 
 set foldmethod=indent "fold based on indent 
@@ -41,9 +49,15 @@ if has('termguicolors') && &termguicolors
 	let g:jellybeans_overrides['background']['guibg'] = 'none' 
 endif
 
+let g:lightline = {
+			\'colorscheme': 'jellybeans',
+			\}
+
+
 "Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
+"Initialize plugin system 
 Plug 'nanotech/jellybeans.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
@@ -51,19 +65,17 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'frazrepo/vim-rainbow'
-
+Plug 'ervandew/supertab'
+Plug 'mileszs/ack.vim'
+Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-surround' 
-"Initialize plugin system 
+
 call plug#end()
 
 "Allows for commenting
 filetype plugin on
 
 set laststatus=2
-
-let g:lightline = {
-			\'colorscheme': 'jellybeans',
-			\}
 
 "turn hybrid line numbers on
 set number relativenumber
@@ -73,10 +85,3 @@ augroup numbertoggle
    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber 
 augroup END
 
-
-""Control P
-let g:ctrlp_map = '<c-p>' 
-let g:ctrlp_cmd = 'CtrlP'
-
-map <c-t> :NERDTreeToggle<CR>
-nnoremap <leader>. :CtrlPTag<cr>
