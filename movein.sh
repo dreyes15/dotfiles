@@ -37,3 +37,4 @@ echo "Done"
 echo "Moving .dircolors..."
 cp ~/.dircolors ./
 echo "Done"
+

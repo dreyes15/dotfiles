@@ -35,5 +35,13 @@ cp ./.tmux_theme ~/.
 echo "Done"
 
 echo "Moving .dircolors..."
-cp ./.dircolors ./
+cp ./.dircolors ~/.
 echo 'Done'
+
+echo "Moving install.sh"
+cp ./install.sh ~/
+echo "Done"
+
+echo "Moving test.sh"
+cp ./test.sh ~/
+echo "Done"

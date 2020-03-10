@@ -69,6 +69,7 @@ Plug 'ervandew/supertab'
 Plug 'mileszs/ack.vim'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-surround' 
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
