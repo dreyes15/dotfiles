@@ -10,6 +10,10 @@ echo "Moving vim folder .vim"
 cp -r ~/.vim ./
 echo "Done"
 
+echo "Moving in CTF scripts"
+cp -r ~/scripts ./
+echo "Done"
+
 echo "Moving .ctags..."
 cp ~/.ctags ./
 echo "Done"

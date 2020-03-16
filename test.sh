@@ -1,4 +1,4 @@
-echo "Checking to see if all tools were properly isntalled..."
+echo "Checking to see if all tools were properly installed..."
 bad=0
 if !(python -c "from pwn import *" 2>&1); then
     echo pwntool not installed
@@ -100,5 +100,6 @@ if [ $bad -eq 1 ]; then
     echo "Some programs wre not succefully installed or wrong versions were installed..."
 	exit 1
 fi
-echo "All programs sucessfully installed"
+echo "All programs sucessfully installed..."
+echo "You are free to hack away."
 exit 0
