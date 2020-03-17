@@ -8,7 +8,7 @@ export ZSH="/home/user/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="gentoo"
 
 export EDITOR=vim
 
@@ -82,7 +82,9 @@ test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
+#Start tmux on SSHing onto a machine
 function ssh () {/usr/bin/ssh -t $@ "tmux attach || tmux new";}
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
