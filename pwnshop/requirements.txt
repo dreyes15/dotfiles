@@ -1,0 +1,14 @@
+###### PwnShop Requirements ######
+
+angr
+ipdb
+r2pipe
+ropper
+ipython
+unicorn
+pwntools
+capstone
+z3-solver
+ROPGadget
+keystone-engine
+websocket-client
